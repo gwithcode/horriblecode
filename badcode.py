@@ -38,3 +38,22 @@ class multiplyy(Calculator):
             return a * b
         else:
             return "Invalid Input"
+
+def main():
+    print("Calculator")
+    a = input("Enter first number: ")
+    b = input("Enter second number: ")
+    op = input("Enter operation (+, -, ): ")
+
+    if op == '+':
+        print("Result:", addition_function(int(a), int(b)))
+    elif op == '-':
+        calc = Calculator()
+        print("Result:", calc.s(int(a), int(b)))
+    elif op == '':
+        adv_calc = multiplyy()
+        print("Result:", adv_calc.multiply(int(a), int(b)))
+    else:
+        print("WRONGGGG IDIOT")
+
+main()
